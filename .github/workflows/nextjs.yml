@@ -32,6 +32,8 @@ jobs:
 
       - name: Build (Next export -> out/)
         run: npm run build
+        env:
+          NEXT_BASE_PATH: /1key
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
